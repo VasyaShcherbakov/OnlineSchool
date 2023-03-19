@@ -1,4 +1,4 @@
-package course2.utility;
-
+package OnLIneScool.utility;
 public class LecturesUtil {
+
 }
