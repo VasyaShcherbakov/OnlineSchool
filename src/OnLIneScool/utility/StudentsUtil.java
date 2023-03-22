@@ -1,4 +1,4 @@
-package course3.utility;
+package OnLIneScool.utility;
 
 public class StudentsUtil {
 }
