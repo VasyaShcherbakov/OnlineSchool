@@ -1,5 +1,7 @@
 package OnLIneScool.entyty;
 
+import OnLIneScool.utility.LecturesUtil;
+
 public class Lectures {
     private int id;
 
@@ -72,13 +74,7 @@ public class Lectures {
         return countLectures;
     }
 
-    void sayNameLectures() {
-        System.out.println(name + surname);
+    public Lectures(String idKurse) {
+        this.idKurse = idKurse;
     }
-
-    void setCountLectures() {
-        System.out.println("Kilkist' Lektoriv - " + countLectures);
-    }
-
-
 }

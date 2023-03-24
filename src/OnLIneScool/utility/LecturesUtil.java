@@ -5,11 +5,20 @@ public class LecturesUtil {
 
     Lectures lectures;
 
-    void sayNameLectures() {
+    public LecturesUtil(Lectures lectures) {
+        this.lectures = lectures;
+    }
+
+    void printStudent () {
+        System.out.println(lectures);
+    }
+
+    public void sayNameLectures() {
         System.out.println(lectures.getName() + lectures.getSurname());
     }
-    void setCountLectures() {
-        System.out.println("Kilkist' Lektoriv - " + Lectures.getCountLectures());
+
+   public void setCountLectures() {
+        System.out.println("Kilkist' Lekciy  - " + Lectures.getCountLectures());
     }
 
 

@@ -66,10 +66,5 @@ package OnLIneScool.entyty;
             Students.countStudents = countStudents;
         }
 
-        void sayNameStudents() {
-        System.out.println(name + surname);
-    }
-    void  seyCountStudents () {
-        System.out.println("Kilkist' Studentiv - " +  countStudents);
-    }
+
 }

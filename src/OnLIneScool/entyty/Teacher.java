@@ -65,11 +65,5 @@ package OnLIneScool.entyty;
             this.academicPerformance = academicPerformance;
         }
 
-        void sayNameTeacher() {
-        System.out.println(name + surname);
-    }
 
-    void countTeacher() {
-        System.out.println("Kilkist' Vhiteliv - " + countTeacher);
-    }
 }
