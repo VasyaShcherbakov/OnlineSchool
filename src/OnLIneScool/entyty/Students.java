@@ -1,13 +1,13 @@
 package OnLIneScool.entyty;
 
-class Students {
+    public class Students {
     private int id;
 
     static   int countStudents;
-    int curs;
-    String name;
-    String surname;
-    int academicPerformance;
+    private  int curs;
+    private String name;
+    private String surname;
+    private  int academicPerformance;
 
     public Students(int id, int curs, String name, String surname, int academicPerformance) {
         this.id = id;
@@ -18,10 +18,55 @@ class Students {
         countStudents ++;
     }
 
+        public int getId() {
+            return id;
+        }
 
+        public void setId(int id) {
+            this.id = id;
+        }
 
+        public int getCurs() {
+            return curs;
+        }
 
-    void sayNameStudents() {
+        public void setCurs(int curs) {
+            this.curs = curs;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getSurname() {
+            return surname;
+        }
+
+        public void setSurname(String surname) {
+            this.surname = surname;
+        }
+
+        public int getAcademicPerformance() {
+            return academicPerformance;
+        }
+
+        public void setAcademicPerformance(int academicPerformance) {
+            this.academicPerformance = academicPerformance;
+        }
+
+        public static int getCountStudents() {
+            return countStudents;
+        }
+
+        public static void setCountStudents(int countStudents) {
+            Students.countStudents = countStudents;
+        }
+
+        void sayNameStudents() {
         System.out.println(name + surname);
     }
     void  seyCountStudents () {
