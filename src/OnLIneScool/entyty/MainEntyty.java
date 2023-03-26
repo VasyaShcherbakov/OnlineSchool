@@ -33,12 +33,13 @@ class MainEntyty {
         Lectures lectures8 = new Lectures(15,(byte) 1,"Orlando","Andreevich",95);
         lectures8.idKurse ="1";
         // Виводим на екран ID курсу 6 лекції
+
         System.out.println("ID Kursu 6 lekcii  =  " +lectures6.idKurse);
 
         LecturesUtil lecturesUtil = new LecturesUtil(lectures);
         lecturesUtil.sayNameLectures();
         lecturesUtil.setCountLectures();
-
+        Students.getCountStudents();
 
 
 

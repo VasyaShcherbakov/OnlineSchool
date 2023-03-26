@@ -17,6 +17,7 @@ public class LecturesUtil {
         System.out.println(lectures.getName() + lectures.getSurname());
     }
 
+
    public void setCountLectures() {
         System.out.println("Kilkist' Lekciy  - " + Lectures.getCountLectures());
     }
