@@ -49,8 +49,8 @@ class MainEntyty {
        /* System.out.println("ID Kursu 6 lekcii  =  " +lectures6.idKurse);*/
 
         Scanner scanner = new Scanner(System.in);
-      /**/  Scanner scanner2 = new Scanner(System.in);
-      /**/  Scanner scanner3 = new Scanner(System.in);
+        Scanner scanner2 = new Scanner(System.in);
+        Scanner scanner3 = new Scanner(System.in);
 
         System.out.println("Select genre of course category :");
         System.out.println("1. Lectures");
