@@ -12,6 +12,17 @@ public class Lectures {
     private String surname;
     private int academicPerformance;
 
+    @Override
+    public String toString() {
+        return "Lectures{" +
+                "id=" + id +
+                ", idKurse='" + idKurse + '\'' +
+                ", curs=" + curs +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", academicPerformance=" + academicPerformance +
+                '}';
+    }
 
     public Lectures(int id, byte curs, String name, String surname, int academicPerformance) {
         this.id = id;
