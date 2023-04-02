@@ -16,6 +16,9 @@ package OnLIneScool.entyty;
         this.surname = surname;
         this.academicPerformance = academicPerformance;
         countStudents ++;
+
+
+
     }
 
         public int getId() {
