@@ -1,11 +1,38 @@
 package OnLIneScool.entyty;
 
-import OnLIneScool.utility.LecturesUtil;
-
+import java.util.Arrays;
 import java.util.Scanner;
 
 class MainEntyty {
     public static void main(String[] args) {
+
+        StudentsRepository.createStudentsArray(3);
+        TeacherRepository.createTeacherArray(3);
+
+        final Students [] students = StudentsRepository.students;
+        final Teacher[] teachers = TeacherRepository.teachers;
+        students[0]= new Students(1,1,"Milan","Romanovich",90);
+        students[1]=new Students(2,2,"Trofim","Alekseevich",95);
+        students[2]=new Students(3,3,"Zhdan","Vitalievich",95);
+        teachers[0]=new Teacher(1,1,"Stefan","Lvovich",80);
+        teachers[1]=new Teacher(2,2,"Pyotr","Fyodorovich",80);
+        teachers[2]=new Teacher(3,3,"Charles","Borisovich",95);
+
+        final Students[] studentsCopy = Arrays.copyOf(students, 100);
+
+
+       for (int e = 0 ; e < studentsCopy.length; e++ ) {
+       Students e1 = studentsCopy [e] ;
+       System.out.println( e1);
+       }
+        System.out.println(StudentsRepository.students[0]);;
+        for (Students students1 : students)
+        {
+            System.out.println(students1);
+        }
+
+
+
         Teacher teacher0 = new Teacher(1, 1, "Dmitriy", "Yukhimovich", 90);
 
         Lectures lectures = new Lectures(7, (byte) 1, "Nikodim", "Pilipovith", 60);
@@ -188,6 +215,11 @@ class MainEntyty {
 
 
     }
+
+
+
+
+
 
 }
 
