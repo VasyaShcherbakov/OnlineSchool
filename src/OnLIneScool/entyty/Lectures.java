@@ -3,14 +3,14 @@ package OnLIneScool.entyty;
 import OnLIneScool.utility.LecturesUtil;
 
 public class Lectures {
-    private int id;
+    public int id;
 
     public String idKurse;
-    private byte curs;
+    public byte curs;
     static int countLectures;
-    private String name;
-    private String surname;
-    private int academicPerformance;
+    public String name;
+    public String surname;
+    public int academicPerformance;
 
     @Override
     public String toString() {
