@@ -66,5 +66,14 @@ package OnLIneScool.entyty;
             Students.countStudents = countStudents;
         }
 
-
-}
+        @Override
+        public String toString() {
+            return "Students{" +
+                    "id=" + id +
+                    ", curs=" + curs +
+                    ", name='" + name + '\'' +
+                    ", surname='" + surname + '\'' +
+                    ", academicPerformance=" + academicPerformance +
+                    '}';
+        }
+    }
