@@ -2,7 +2,7 @@ package OnLIneScool.entyty;
 import java.util.Arrays;
 import java.util.Random;
 
-public class TeacherRepository {
+public class TeacherRepository extends SuperRepositoriy {
     public static  Teacher[]teachers;
     public static void createTeacherArray (final int lenght)
     {

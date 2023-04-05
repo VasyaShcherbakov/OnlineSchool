@@ -11,12 +11,12 @@ class MainEntyty {
 
         final Students [] students = StudentsRepository.students;
         final Teacher[] teachers = TeacherRepository.teachers;
-        students[0]= new Students(1,1,"Milan","Romanovich",90);
-        students[1]=new Students(2,2,"Trofim","Alekseevich",95);
-        students[2]=new Students(3,3,"Zhdan","Vitalievich",95);
-        teachers[0]=new Teacher(1,1,"Stefan","Lvovich",80);
-        teachers[1]=new Teacher(2,2,"Pyotr","Fyodorovich",80);
-        teachers[2]=new Teacher(3,3,"Charles","Borisovich",95);
+        students[0]= new Students(180,"man",1,1,"Milan","Romanovich",90);
+        students[1]=new Students(170,"man",2,2,"Trofim","Alekseevich",95);
+        students[2]=new Students(160,"man",3,3,"Zhdan","Vitalievich",95);
+        teachers[0]=new Teacher(185,"man",1,1,"Stefan","Lvovich",80);
+        teachers[1]=new Teacher(190,"man",2,2,"Pyotr","Fyodorovich",80);
+        teachers[2]=new Teacher(190,"man",3,3,"Charles","Borisovich",95);
 
         final Students[] studentsCopy = Arrays.copyOf(students, 100);
 
@@ -33,19 +33,19 @@ class MainEntyty {
 
 
 
-        Teacher teacher0 = new Teacher(1, 1, "Dmitriy", "Yukhimovich", 90);
+        Teacher teacher0 = new Teacher(190,"man",1, 1, "Dmitriy", "Yukhimovich", 90);
 
         Lectures lectures = new Lectures(7, (byte) 1, "Nikodim", "Pilipovith", 60);
-        lectures.idKurse = "1";
-        Teacher teacher1 = new Teacher(2, 2, "Shastyslav", "Vitanovich", 90);
+
+        Teacher teacher1 = new Teacher(190,"man",2, 2, "Shastyslav", "Vitanovich", 90);
 
         Lectures lectures1 = new Lectures(8, (byte) 2, "Tverdigorst", "Yaromirovith", 85);
-        lectures1.idKurse = "1";
 
-        Teacher teacher2 = new Teacher(3, 3, "Charl'z", "Maksimovich", 90);
+
+        Teacher teacher2 = new Teacher(180,"man",3, 3, "Charl'z", "Maksimovich", 90);
 
         Lectures lectures2 = new Lectures(9, (byte) 3, "Juliy", "Arsenovith", 85);
-        lectures2.idKurse = "1";
+
 
         // Створюємо 6 лекцій.
 
@@ -61,11 +61,11 @@ class MainEntyty {
         lectures7.idKurse = "5";
         Lectures lectures8 = new Lectures(15, (byte) 1, "Orlando", "Andreevich", 95);
         lectures8.idKurse = "1";
-        Students students0 = new Students(4, 1, "Vlada", "Vadimivna", 80);
+        Students students0 = new Students(180,"female",4, 1, "Vlada", "Vadimivna", 80);
 
-        Students students1 = new Students(5, 2, "Zvonimira", "Semenivna", 80);
+        Students students1 = new Students(170,"female",5, 2, "Zvonimira", "Semenivna", 80);
 
-        Students students2 = new Students(6, 3, "Odarka", "Timurivna", 95);
+        Students students2 = new Students(195,"female",6, 3, "Odarka", "Timurivna", 95);
 
 
         // Виводим на екран ID курсу 6 лекції
@@ -185,18 +185,17 @@ class MainEntyty {
 
 
 
-            for ( int i = 0 ;i < 8; i++ );
+           /* for ( int i = 0 ;i < 8; i++ );
             {
-                int r = 1;
-              Lectures lectures10 = new Lectures(10, (byte) 3,"Name1","Surname2",80);
+              Lectures lectures10 = new Lectures();
                lectures10.setId(10);
-                lectures10.idKurse.equals("1");
-                lectures10.name = ("Name"+r);
-                lectures10.surname = ("Name"+ r);
+                lectures10.idKurse.equals("1"+ 1);
+                lectures10.name.equals("Name"+i);
+                lectures10.surname.equals ("Name"+ i);
 
-                lectures10.academicPerformance = (80+r);
-                r++;
-            }
+                lectures10.setAcademicPerformance((0x50 + i));
+                i++;
+            }*/
 
 
 

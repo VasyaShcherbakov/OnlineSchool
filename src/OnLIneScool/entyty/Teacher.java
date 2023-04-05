@@ -1,21 +1,25 @@
 package OnLIneScool.entyty;
 
-    public class Teacher {
+    public class Teacher extends Human {
     private int id;
     static int countTeacher;
     private int curs;
     private String name;
     private String surname;
-    int academicPerformance;
+    private int academicPerformance;
 
-    public Teacher(int id, int curs, String name, String surname, int academicPerformance) {
-        this.id = id;
-        this.curs = curs;
-        this.name = name;
-        this.surname = surname;
-        this.academicPerformance = academicPerformance;
-        countTeacher ++;
-    }
+        public Teacher (int height, String gender,int id,int curs,String name,String surname,int academicPerformance) {
+            super(height, gender);
+
+            this.id = id;
+            this.curs = curs;
+            this.name = name;
+            this.surname = surname;
+            this.academicPerformance = academicPerformance;
+            countTeacher ++;
+        }
+
+
 
         public int getId() {
             return id;
