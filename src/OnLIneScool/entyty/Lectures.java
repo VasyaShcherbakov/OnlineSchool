@@ -2,15 +2,15 @@ package OnLIneScool.entyty;
 
 import OnLIneScool.utility.LecturesUtil;
 
-public class Lectures {
-    public int id;
+    public class Lectures {
+    private int id;
 
     public String idKurse;
-    public byte curs;
+    private byte curs;
     static int countLectures;
-    public String name;
-    public String surname;
-    public int academicPerformance;
+    private String name;
+    private String surname;
+    private int academicPerformance;
 
     @Override
     public String toString() {
@@ -88,4 +88,8 @@ public class Lectures {
     public Lectures(String idKurse) {
         this.idKurse = idKurse;
     }
-}
+
+    public Lectures() {
+
+        }
+    }

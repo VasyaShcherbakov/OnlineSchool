@@ -1,6 +1,10 @@
 package OnLIneScool.entyty;
 
-    public class Students {
+    public class Students extends Human {
+
+
+
+
     private int id;
 
     static   int countStudents;
@@ -9,17 +13,24 @@ package OnLIneScool.entyty;
     private String surname;
     private  int academicPerformance;
 
-    public Students(int id, int curs, String name, String surname, int academicPerformance) {
-        this.id = id;
-        this.curs = curs;
-        this.name = name;
-        this.surname = surname;
-        this.academicPerformance = academicPerformance;
-        countStudents ++;
+        public Students (int height, String gender,int id,int curs,String name,String surname,int academicPerformance) {
+            super(height, gender);
+            this.id = id;
+            this.curs = curs;
+            this.name = name;
+            this.surname = surname;
+            this.academicPerformance = academicPerformance;
+            this.countStudents ++;
 
 
+        }
 
-    }
+        @Override
+        public void seyHuman() {
+            System.out.println("Student"+name);
+        }
+
+
 
         public int getId() {
             return id;
@@ -79,4 +90,5 @@ package OnLIneScool.entyty;
                     ", academicPerformance=" + academicPerformance +
                     '}';
         }
+
     }

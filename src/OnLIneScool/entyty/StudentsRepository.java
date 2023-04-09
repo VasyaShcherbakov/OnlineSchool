@@ -1,7 +1,7 @@
 package OnLIneScool.entyty;
 import java.util.Arrays;
 
-public class StudentsRepository {
+public class StudentsRepository extends SuperRepositoriy {
 
     public static  Students[]students;
 
