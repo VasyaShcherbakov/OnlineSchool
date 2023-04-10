@@ -6,6 +6,52 @@ import java.util.Scanner;
 class MainEntyty {
     public static void main(String[] args) {
 
+
+      //  PersonRole personRole1 = PersonRole.TEACHER;
+
+
+
+
+
+
+
+
+
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        int genre = 0;
+
+        do {
+            System.out.println("Select genre of Person Role :");
+            System.out.println("1. STUDENT");
+            System.out.println("2.  TEACHER");
+            genre = scanner.nextInt();
+
+        }
+        while (genre < 1 || genre > 4);
+        PersonRole personRole = PersonRole.STUDENT;
+        PersonRole personRole2 = PersonRole.TEACHER;
+        System.out.println(personRole.getTranslation());
+        System.out.println(PersonRole.valueOf("STUDENT"));
+
+        switch (genre) {
+            case 1 -> System.out.println(personRole);
+        //    System.out.println("STUDENT");
+
+            case 2 -> System.out.println(personRole2);
+         //   System.out.println("TEACHER");
+
+
+
+        }
+
+
+
+
+
+/*
         StudentsRepository.createStudentsArray(3);
         TeacherRepository.createTeacherArray(3);
 
@@ -70,7 +116,9 @@ class MainEntyty {
 
         // Виводим на екран ID курсу 6 лекції
 
-        /* System.out.println("ID Kursu 6 lekcii  =  " +lectures6.idKurse);*/
+        */
+/* System.out.println("ID Kursu 6 lekcii  =  " +lectures6.idKurse);*//*
+
 
         Scanner scanner = new Scanner(System.in);
         Scanner scanner2 = new Scanner(System.in);
@@ -185,7 +233,8 @@ class MainEntyty {
 
 
 
-           /* for ( int i = 0 ;i < 8; i++ );
+           */
+/* for ( int i = 0 ;i < 8; i++ );
             {
               Lectures lectures10 = new Lectures();
                lectures10.setId(10);
@@ -195,7 +244,8 @@ class MainEntyty {
 
                 lectures10.setAcademicPerformance((0x50 + i));
                 i++;
-            }*/
+            }*//*
+
 
 
 
@@ -211,6 +261,7 @@ class MainEntyty {
 
 
 
+*/
 
 
     }
