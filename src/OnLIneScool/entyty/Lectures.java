@@ -2,7 +2,9 @@ package OnLIneScool.entyty;
 
 import OnLIneScool.utility.LecturesUtil;
 
-    public class Lectures {
+public class Lectures {
+
+    private int personId;
     private int id;
 
     public String idKurse;
