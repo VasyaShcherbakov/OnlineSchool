@@ -1,10 +1,85 @@
 package OnLIneScool.entyty;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 class MainEntyty {
     public static void main(String[] args) {
+
+
+
+        int genre = 0;
+
+        do {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Select genre of Person Role :");
+            System.out.println("1. STUDENT");
+            System.out.println("2.  TEACHER");
+            genre = scanner.nextInt();
+
+        }
+        while (genre < 1 || genre > 2);
+        PersonRole personRole = PersonRole.STUDENT;
+        PersonRole personRole2 = PersonRole.TEACHER;
+
+
+
+        switch (genre) {
+            case 1 -> {
+                StringBuffer stringBuffer = new StringBuffer("STUDENT");
+                System.out.println(stringBuffer.reverse());
+                System.out.println(stringBuffer.length());
+                System.out.println(stringBuffer.capacity());
+                System.out.println("Vvvedit' imja i Familiju");
+                Scanner scanner = new Scanner(System.in);
+                String name = scanner.nextLine();
+                System.out.println("Kil'kist' vvedenyh sivoliv");
+                System.out.println(name.length());
+            }
+
+
+            case 2 -> {
+                System.out.println("Vvvedit' imja i Familiju");
+                StringBuffer stringBuffer2 = new StringBuffer("TEACER");
+                System.out.println(stringBuffer2.reverse());
+                System.out.println(stringBuffer2.length());
+                System.out.println(stringBuffer2.capacity());
+                System.out.println("Vvvedit' imja i Familiju");
+                Scanner scanner = new Scanner(System.in);
+                String name = scanner.nextLine();
+                System.out.println("Kil'kist' vvedenyh sivoliv");
+                System.out.println(name.length());
+
+
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       //  PersonRole personRole1 = PersonRole.TEACHER;
@@ -19,7 +94,7 @@ class MainEntyty {
 
 
 
-        Scanner scanner = new Scanner(System.in);
+       /* Scanner scanner = new Scanner(System.in);
 
         int genre = 0;
 
@@ -48,7 +123,7 @@ class MainEntyty {
         }
 
 
-
+*/
 
 
 /*
