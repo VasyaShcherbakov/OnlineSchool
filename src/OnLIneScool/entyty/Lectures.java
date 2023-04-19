@@ -14,6 +14,13 @@ public class Lectures {
     private String surname;
     private int academicPerformance;
 
+    private String description ;
+
+
+
+
+
+
     @Override
     public String toString() {
         return "Lectures{" +
