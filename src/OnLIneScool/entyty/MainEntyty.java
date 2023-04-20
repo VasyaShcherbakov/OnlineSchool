@@ -5,9 +5,25 @@ import java.util.Scanner;
 class MainEntyty {
     public static void main(String[] args) {
 
+        Generalization<Integer> generalization = new Generalization<>();
+       /* generalization = {1,4,43,5,43,};*/
+        generalization.setGeneralization({10,543,543,3234,});
+
+    }
 
 
-        int genre = 0;
+
+
+
+
+
+
+
+
+
+
+
+ /*       int genre = 0;
 
         do {
             Scanner scanner = new Scanner(System.in);
@@ -50,7 +66,7 @@ class MainEntyty {
                 System.out.println(name.length());
 
 
-            }
+            }*/
 
 
         }
@@ -338,14 +354,5 @@ class MainEntyty {
 
 */
 
-
-    }
-
-
-
-
-
-
-}
 
 
