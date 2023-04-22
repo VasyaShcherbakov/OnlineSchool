@@ -8,7 +8,7 @@ class MainEntyty {
         Generalization <String,Integer> generalization = new Generalization<>(2);
         System.out.println(generalization.getSize());
         System.out.println(generalization.isEmpty());
-    }
+   }
 
 
 
