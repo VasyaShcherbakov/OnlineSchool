@@ -5,12 +5,10 @@ import java.util.Scanner;
 class MainEntyty {
     public static void main(String[] args) {
 
-        Generalization<Integer> generalization = new Generalization<>();
-       /* generalization = {1,4,43,5,43,};*/
-        generalization.setGeneralization({10,543,543,3234,});
-
+        Generalization <String,Integer> generalization = new Generalization<>(2);
+        System.out.println(generalization.getSize());
+        System.out.println(generalization.isEmpty());
     }
-
 
 
 
