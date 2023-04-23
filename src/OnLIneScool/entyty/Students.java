@@ -1,6 +1,6 @@
 package OnLIneScool.entyty;
 
-    public class Students extends Human {
+    public class Students implements Person {
 
 
 
@@ -14,7 +14,7 @@ package OnLIneScool.entyty;
     private  int academicPerformance;
 
         public Students (int height, String gender,int id,int curs,String name,String surname,int academicPerformance) {
-            super(height, gender);
+
             this.id = id;
             this.curs = curs;
             this.name = name;
@@ -27,7 +27,7 @@ package OnLIneScool.entyty;
 
         @Override
         public void seyHuman() {
-            System.out.println("Student"+name);
+            System.out.println("Hello I am Students");
         }
 
 

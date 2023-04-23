@@ -5,9 +5,16 @@ import java.util.Scanner;
 class MainEntyty {
     public static void main(String[] args) {
 
-        Generalization <String,Integer> generalization = new Generalization<>(2);
-        System.out.println(generalization.getSize());
-        System.out.println(generalization.isEmpty());
+        Person person = new Students(160,"Male",1,2,"Yukhimovych","Charles ",80);
+        Person person1 = new Teacher(180,"Female",2,2, " Matvey ","Anatolyevich",90);
+        HomeWork homeWork = new HomeWork(1,2,"Hard");
+
+
+
+
+
+
+
     }
 
 

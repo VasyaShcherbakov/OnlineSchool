@@ -4,6 +4,16 @@ import OnLIneScool.utility.LecturesUtil;
 
 public class Lectures {
 
+    HomeWork [] homeWork = new HomeWork[3];
+
+    public Lectures(HomeWork[] homeWork) {
+        this.homeWork = homeWork;
+    }
+
+    HomeWork homeWork1 = new HomeWork(1,2,"Hard");
+
+
+
     private int personId;
     private int id;
 
