@@ -2,20 +2,58 @@ package OnLIneScool.entyty;
 
 import java.util.Scanner;
 
+import static java.lang.IllegalArgumentException.*;
+
 class MainEntyty {
     public static void main(String[] args) {
 
-        Person person = new Students(160,"Male",1,2,"Yukhimovych","Charles ",80);
+        System.out.println("Enter genre of course category :");
+        System.out.println("Lectures");
+        System.out.println("Students");
+        System.out.println("Teaher");
+        Scanner scanner = new Scanner(System.in);
+        String role;
+        role = scanner.nextLine();
+        try {
+            if (role.equals("Lectures")) {
+                System.out.println("Vi Vibrali Lectures");
+            } else if (role.equals("Students")) {
+                System.out.println("Vi Vibrali Students");
+            } else if (role.equals("Teaher")) {
+                System.out.println("Vi Vibrali Teaher");
+            } else {
+                throw new IllegalArgumentException("Vibrana nevidoma Kategorija");
+            }
+
+        } catch (IllegalArgumentException ex) {
+            System.out.println(ex.getMessage());
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /*  Person person = new Students(160,"Male",1,2,"Yukhimovych","Charles ",80);
         Person person1 = new Teacher(180,"Female",2,2, " Matvey ","Anatolyevich",90);
         HomeWork homeWork = new HomeWork(1,2,"Hard");
 
+*/
 
 
 
 
 
-
+/*
     }
+*/
 
 
 
@@ -74,36 +112,10 @@ class MainEntyty {
             }*/
 
 
-        }
+        /*   }*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      //  PersonRole personRole1 = PersonRole.TEACHER;
+        //  PersonRole personRole1 = PersonRole.TEACHER;
 
 
 
@@ -213,7 +225,7 @@ class MainEntyty {
         // Виводим на екран ID курсу 6 лекції
 
         */
-/* System.out.println("ID Kursu 6 lekcii  =  " +lectures6.idKurse);*//*
+        /* System.out.println("ID Kursu 6 lekcii  =  " +lectures6.idKurse);*//*
 
 
         Scanner scanner = new Scanner(System.in);
@@ -360,4 +372,5 @@ class MainEntyty {
 */
 
 
-
+    }
+}
