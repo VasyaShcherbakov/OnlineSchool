@@ -5,7 +5,7 @@ package OnLIneScool.entyty;
 
 
 
-    private int id;
+    private Integer id;
 
     static   int countStudents;
     private  int curs;
@@ -23,6 +23,9 @@ package OnLIneScool.entyty;
             this.countStudents ++;
 
 
+        }
+
+        public Students(int height) {
         }
 
         @Override

@@ -1,7 +1,7 @@
 package OnLIneScool.entyty;
 
 public class HomeWork {
-    private int id;
+    private Integer id;
     private int lectureId;
     private String task;
 

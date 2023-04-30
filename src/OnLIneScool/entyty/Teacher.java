@@ -1,7 +1,7 @@
 package OnLIneScool.entyty;
 
     public class Teacher implements Person {
-    private int id;
+    private Integer id;
     static int countTeacher;
     private int curs;
     private String name;

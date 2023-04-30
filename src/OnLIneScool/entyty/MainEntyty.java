@@ -1,11 +1,31 @@
 package OnLIneScool.entyty;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import static java.lang.IllegalArgumentException.*;
 
 class MainEntyty {
+
+
+
+
+
+
     public static void main(String[] args) {
+
+        List<Students> students = new ArrayList<>();
+    students.add(new Students(1));
+    students.add(new Students(2))
+    students.add(new Students(3));
+    Simplerator<Students>studentsSimplerator=new Simplerator<>(Students);
+
+    }
+
+
+
+/*
 
         System.out.println("Enter genre of course category :");
         System.out.println("Lectures");
@@ -26,9 +46,8 @@ class MainEntyty {
             }
 
         } catch (IllegalArgumentException ex) {
-            System.out.println(ex.getMessage());
+            System.out.println(ex.getMessage());*/
         }
-
 
 
 
@@ -372,5 +391,6 @@ class MainEntyty {
 */
 
 
+/*
     }
-}
+}*/

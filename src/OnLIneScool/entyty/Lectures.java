@@ -15,7 +15,7 @@ public class Lectures {
 
 
     private int personId;
-    private int id;
+    private Integer id;
 
     public String idKurse;
     private byte curs;
