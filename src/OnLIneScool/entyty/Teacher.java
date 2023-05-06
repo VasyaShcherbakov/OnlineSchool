@@ -74,4 +74,15 @@ package OnLIneScool.entyty;
         public void seyHuman() {
             System.out.println("Hello I am Teaher");
         }
+
+        @Override
+        public String toString() {
+            return "Teacher{" +
+                    "id=" + id +
+                    ", curs=" + curs +
+                    ", name='" + name + '\'' +
+                    ", surname='" + surname + '\'' +
+                    ", academicPerformance=" + academicPerformance +
+                    '}';
+        }
     }

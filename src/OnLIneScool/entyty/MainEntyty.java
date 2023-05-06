@@ -1,5 +1,6 @@
 package OnLIneScool.entyty;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -14,12 +15,35 @@ class MainEntyty {
 
 
     public static void main(String[] args) {
+        Teacher teacher0 = new Teacher(190,"man",1, 1, "Dmitriy", "Yukhimovich", 90);
+        Teacher teacher1 = new Teacher(190,"man",2, 2, "Shastyslav", "Vitanovich", 90);
+        Teacher teacher2 = new Teacher(180,"man",3, 3, "Charl'z", "Maksimovich", 90);
 
-        List<Students> students = new ArrayList<>();
-    students.add(new Students(1));
-    students.add(new Students(2))
-    students.add(new Students(3));
-    Simplerator<Students>studentsSimplerator=new Simplerator<>(Students);
+       ArrayList<Teacher>teachers=new ArrayList<Teacher>();
+       teachers.add(teacher0);
+       teachers.add(teacher1);
+       teachers.add(teacher2);
+
+        System.out.println(teachers);
+
+        AdditiveMaterials urlMarerials = new AdditiveMaterials(1,"Hard",7, AdditiveMaterials.ResourceTye.URL);
+        AdditiveMaterials videoMatrials = new AdditiveMaterials(2,"Very Hard",13, AdditiveMaterials.ResourceTye.VIDEO);
+        AdditiveMaterials bookMaterial = new AdditiveMaterials(3,"Extremely Difficult",17, AdditiveMaterials.ResourceTye.BOOK);
+
+        ArrayList<AdditiveMaterials> additiveMaterialsArrayList = new ArrayList<AdditiveMaterials>();
+        additiveMaterialsArrayList.add(urlMarerials);
+        additiveMaterialsArrayList.add(videoMatrials);
+        additiveMaterialsArrayList.add(bookMaterial);
+
+        System.out.println(additiveMaterialsArrayList);
+
+
+
+
+
+
+
+
 
     }
 
