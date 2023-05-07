@@ -1,6 +1,8 @@
 package OnLIneScool.entyty;
 
-    public class Teacher implements Person {
+import java.util.Objects;
+
+public class Teacher implements Comparable<Teacher> {
     private Integer id;
     static int countTeacher;
     private int curs;
@@ -70,10 +72,10 @@ package OnLIneScool.entyty;
         }
 
 
-        @Override
+      /*  @Override
         public void seyHuman() {
             System.out.println("Hello I am Teaher");
-        }
+        }*/
 
         @Override
         public String toString() {
@@ -85,4 +87,22 @@ package OnLIneScool.entyty;
                     ", academicPerformance=" + academicPerformance +
                     '}';
         }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Teacher teacher = (Teacher) o;
+        return curs == teacher.curs && academicPerformance == teacher.academicPerformance && id.equals(teacher.id) && name.equals(teacher.name) && surname.equals(teacher.surname);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, curs, name, surname, academicPerformance);
+    }
+
+    @Override
+    public int compareTo(Teacher o) {
+        return 0;
+    }
+}

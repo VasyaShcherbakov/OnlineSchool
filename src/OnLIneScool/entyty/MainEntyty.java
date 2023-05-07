@@ -1,76 +1,44 @@
 package OnLIneScool.entyty;
 
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 import static java.lang.IllegalArgumentException.*;
 
 class MainEntyty {
-
-
-
-
-
-
     public static void main(String[] args) {
+        Set<Course>courses=new HashSet<Course>();
+        courses.add(new Course("Java"));
+        courses.add(new Course("Python"));
+        courses.add(new Course("C++"));
+        courses.add(new Course("Ruby"));
+
+
+        System.out.println(courses);
+
+        TreeSet<Course> sortedCource = new TreeSet<Course>();
+        for (Course course : sortedCource){
+            System.out.println(course.getName());
+        }
         Teacher teacher0 = new Teacher(190,"man",1, 1, "Dmitriy", "Yukhimovich", 90);
         Teacher teacher1 = new Teacher(190,"man",2, 2, "Shastyslav", "Vitanovich", 90);
         Teacher teacher2 = new Teacher(180,"man",3, 3, "Charl'z", "Maksimovich", 90);
 
-       ArrayList<Teacher>teachers=new ArrayList<Teacher>();
-       teachers.add(teacher0);
-       teachers.add(teacher1);
-       teachers.add(teacher2);
+        TreeSet<Teacher>teachers=new TreeSet<>();
+        teachers.add(teacher0);
+        teachers.add(teacher1);
+        teachers.add(teacher2);
 
         System.out.println(teachers);
-
-        AdditiveMaterials urlMarerials = new AdditiveMaterials(1,"Hard",7, AdditiveMaterials.ResourceTye.URL);
-        AdditiveMaterials videoMatrials = new AdditiveMaterials(2,"Very Hard",13, AdditiveMaterials.ResourceTye.VIDEO);
-        AdditiveMaterials bookMaterial = new AdditiveMaterials(3,"Extremely Difficult",17, AdditiveMaterials.ResourceTye.BOOK);
-
-        ArrayList<AdditiveMaterials> additiveMaterialsArrayList = new ArrayList<AdditiveMaterials>();
-        additiveMaterialsArrayList.add(urlMarerials);
-        additiveMaterialsArrayList.add(videoMatrials);
-        additiveMaterialsArrayList.add(bookMaterial);
-
-        System.out.println(additiveMaterialsArrayList);
-
-
-
-
-
-
-
-
+        for (Teacher teacher : teachers){
+            System.out.println(teacher);
+        }
 
     }
 
 
 
-/*
 
-        System.out.println("Enter genre of course category :");
-        System.out.println("Lectures");
-        System.out.println("Students");
-        System.out.println("Teaher");
-        Scanner scanner = new Scanner(System.in);
-        String role;
-        role = scanner.nextLine();
-        try {
-            if (role.equals("Lectures")) {
-                System.out.println("Vi Vibrali Lectures");
-            } else if (role.equals("Students")) {
-                System.out.println("Vi Vibrali Students");
-            } else if (role.equals("Teaher")) {
-                System.out.println("Vi Vibrali Teaher");
-            } else {
-                throw new IllegalArgumentException("Vibrana nevidoma Kategorija");
-            }
-
-        } catch (IllegalArgumentException ex) {
-            System.out.println(ex.getMessage());*/
         }
 
 
@@ -418,3 +386,52 @@ class MainEntyty {
 /*
     }
 }*/
+/*
+
+        System.out.println("Enter genre of course category :");
+        System.out.println("Lectures");
+        System.out.println("Students");
+        System.out.println("Teaher");
+        Scanner scanner = new Scanner(System.in);
+        String role;
+        role = scanner.nextLine();
+        try {
+            if (role.equals("Lectures")) {
+                System.out.println("Vi Vibrali Lectures");
+            } else if (role.equals("Students")) {
+                System.out.println("Vi Vibrali Students");
+            } else if (role.equals("Teaher")) {
+                System.out.println("Vi Vibrali Teaher");
+            } else {
+                throw new IllegalArgumentException("Vibrana nevidoma Kategorija");
+            }
+
+        } catch (IllegalArgumentException ex) {
+            System.out.println(ex.getMessage());*/
+
+
+
+
+
+   /*     Teacher teacher0 = new Teacher(190,"man",1, 1, "Dmitriy", "Yukhimovich", 90);
+        Teacher teacher1 = new Teacher(190,"man",2, 2, "Shastyslav", "Vitanovich", 90);
+        Teacher teacher2 = new Teacher(180,"man",3, 3, "Charl'z", "Maksimovich", 90);
+
+        ArrayList<Teacher>teachers=new ArrayList<Teacher>();
+        teachers.add(teacher0);
+        teachers.add(teacher1);
+        teachers.add(teacher2);
+
+        System.out.println(teachers);
+
+        AdditiveMaterials urlMarerials = new AdditiveMaterials(1,"Hard",7, AdditiveMaterials.ResourceTye.URL);
+        AdditiveMaterials videoMatrials = new AdditiveMaterials(2,"Very Hard",13, AdditiveMaterials.ResourceTye.VIDEO);
+        AdditiveMaterials bookMaterial = new AdditiveMaterials(3,"Extremely Difficult",17, AdditiveMaterials.ResourceTye.BOOK);
+
+        ArrayList<AdditiveMaterials> additiveMaterialsArrayList = new ArrayList<AdditiveMaterials>();
+        additiveMaterialsArrayList.add(urlMarerials);
+        additiveMaterialsArrayList.add(videoMatrials);
+        additiveMaterialsArrayList.add(bookMaterial);
+
+        System.out.println(additiveMaterialsArrayList);
+ */
