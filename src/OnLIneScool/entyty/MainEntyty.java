@@ -1,40 +1,29 @@
 package OnLIneScool.entyty;
 
-import java.net.URL;
 import java.util.*;
-
-import static java.lang.IllegalArgumentException.*;
 
 class MainEntyty {
     public static void main(String[] args) {
-        Set<Course>courses=new HashSet<Course>();
-        courses.add(new Course("Java"));
-        courses.add(new Course("Python"));
-        courses.add(new Course("C++"));
-        courses.add(new Course("Ruby"));
 
+     HomeWork hw1 = new HomeWork(1,"Homework_21_Interface_Map");
+     HomeWork hw2 = new HomeWork(2,"Array");
+     HomeWork hw3 = new HomeWork( 3,"ENUM");
 
-        System.out.println(courses);
+     Map<Integer,HomeWork> homeWorkMap = new HashMap<Integer, HomeWork>();
+     homeWorkMap.put(1,hw1);
+     homeWorkMap.put(2,hw2);
+     homeWorkMap.put(3,hw3);
+        System.out.println("Zavvdannja lekcii 1 " + homeWorkMap.get(1).getTask());
+        System.out.println("Zavvdannja lekcii 2 " + homeWorkMap.get(2).getTask());
+        System.out.println("Zavvdannja lekcii 3 " + homeWorkMap.get(3).getTask());
 
-        TreeSet<Course> sortedCource = new TreeSet<Course>();
-        for (Course course : sortedCource){
-            System.out.println(course.getName());
-        }
-        Teacher teacher0 = new Teacher(190,"man",1, 1, "Dmitriy", "Yukhimovich", 90);
-        Teacher teacher1 = new Teacher(190,"man",2, 2, "Shastyslav", "Vitanovich", 90);
-        Teacher teacher2 = new Teacher(180,"man",3, 3, "Charl'z", "Maksimovich", 90);
-
-        TreeSet<Teacher>teachers=new TreeSet<>();
-        teachers.add(teacher0);
-        teachers.add(teacher1);
-        teachers.add(teacher2);
-
-        System.out.println(teachers);
-        for (Teacher teacher : teachers){
-            System.out.println(teacher);
-        }
-
-    }
+        HomeWork value = homeWorkMap.get(1);
+        HomeWork value2 = homeWorkMap.get(2);
+        HomeWork value3 = homeWorkMap.get(3);
+        System.out.println(value);
+        System.out.println(value2);
+        System.out.println(value3);
+        System.out.println(value+" "+value2+" "+ value3 );    }
 
 
 
@@ -435,3 +424,31 @@ class MainEntyty {
 
         System.out.println(additiveMaterialsArrayList);
  */
+
+  /*  Set<Course>courses=new HashSet<Course>();
+        courses.add(new Course("Java"));
+                courses.add(new Course("Python"));
+                courses.add(new Course("C++"));
+                courses.add(new Course("Ruby"));
+
+
+                System.out.println(courses);
+
+                TreeSet<Course> sortedCource = new TreeSet<Course>();
+        for (Course course : sortedCource){
+        System.out.println(course.getName());
+        }
+        Teacher teacher0 = new Teacher(190,"man",1, 1, "Dmitriy", "Yukhimovich", 90);
+        Teacher teacher1 = new Teacher(190,"man",2, 2, "Shastyslav", "Vitanovich", 90);
+        Teacher teacher2 = new Teacher(180,"man",3, 3, "Charl'z", "Maksimovich", 90);
+
+        TreeSet<Teacher>teachers=new TreeSet<>();
+        teachers.add(teacher0);
+        teachers.add(teacher1);
+        teachers.add(teacher2);
+
+        System.out.println(teachers);
+        for (Teacher teacher : teachers){
+        System.out.println(teacher);
+        }
+*/

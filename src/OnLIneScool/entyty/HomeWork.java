@@ -1,8 +1,10 @@
 package OnLIneScool.entyty;
 
+import java.util.Objects;
+
 public class HomeWork {
     private Integer id;
-    private int lectureId;
+    private Integer lectureId;
     private String task;
 
     public HomeWork(int id, int lectureId, String task) {
@@ -42,5 +44,23 @@ public class HomeWork {
                 ", lectureId=" + lectureId +
                 ", task='" + task + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        HomeWork homeWork = (HomeWork) o;
+        return Objects.equals(id, homeWork.id) && Objects.equals(lectureId, homeWork.lectureId) && Objects.equals(task, homeWork.task);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, lectureId, task);
+    }
+
+    public HomeWork(Integer lectureId, String task) {
+        this.lectureId = lectureId;
+        this.task = task;
     }
 }
