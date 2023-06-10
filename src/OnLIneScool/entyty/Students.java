@@ -1,19 +1,25 @@
 package OnLIneScool.entyty;
+import java.util.Random;
 
-    public class Students implements Person {
+    public class Students  {
 
 
 
 
     private Integer id;
-
+    private int homewrok;
     static   int countStudents;
     private  int curs;
     private String name;
     private String surname;
     private  int academicPerformance;
 
-        public Students (int height, String gender,int id,int curs,String name,String surname,int academicPerformance) {
+        public Students(Integer id, int homewrok) {
+            this.id = id;
+            this.homewrok = homewrok;
+        }
+
+        public Students (int height, String gender, int id, int curs, String name, String surname, int academicPerformance) {
 
             this.id = id;
             this.curs = curs;

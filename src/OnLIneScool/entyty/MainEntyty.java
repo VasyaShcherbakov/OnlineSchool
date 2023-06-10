@@ -1,15 +1,37 @@
 package OnLIneScool.entyty;
 
-import java.util.*;
+import java.util.Random;
+
 
 class MainEntyty {
     public static void main(String[] args) {
 
-     HomeWork hw1 = new HomeWork(1,"Homework_21_Interface_Map");
+        Students[] students = new Students[10];
+        Random random = new Random();
+        for (int i = 0; i < students.length; i++) {
+            students[i] = new Students(i + 1, random.nextInt(10) + 1);
+
+        }
+StudentsThread studentsThread = new StudentsThread();
+        studentsThread.start();
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* HomeWork hw1 = new HomeWork(1,"Homework_21_Interface_Map");
      HomeWork hw2 = new HomeWork(2,"Array");
      HomeWork hw3 = new HomeWork( 3,"ENUM");
 
-     Map<Integer,HomeWork> homeWorkMap = new HashMap<Integer, HomeWork>();
+    *//* Map<Integer,HomeWork> homeWorkMap = new HashMap<Integer, HomeWork>();*//*
      homeWorkMap.put(1,hw1);
      homeWorkMap.put(2,hw2);
      homeWorkMap.put(3,hw3);
@@ -23,7 +45,7 @@ class MainEntyty {
         System.out.println(value);
         System.out.println(value2);
         System.out.println(value3);
-        System.out.println(value+" "+value2+" "+ value3 );    }
+        System.out.println(value+" "+value2+" "+ value3 );    }*/
 
 
 
