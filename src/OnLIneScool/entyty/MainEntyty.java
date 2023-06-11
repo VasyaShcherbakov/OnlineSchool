@@ -6,15 +6,13 @@ import java.util.Random;
 class MainEntyty {
     public static void main(String[] args) {
 
-        Students[] students = new Students[10];
-        Random random = new Random();
-        for (int i = 0; i < students.length; i++) {
-            students[i] = new Students(i + 1, random.nextInt(10) + 1);
-
+        if (args.length < 1) {
+            System.err.println("Usage: java Client <server IP>");
+            System.exit(1);
         }
-StudentsThread studentsThread = new StudentsThread();
-        studentsThread.start();
-
+        String serverIP = args[0];
+        Client client = new Client(serverIP);
+        client.sendObject();
     }
 
 
