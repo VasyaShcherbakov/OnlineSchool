@@ -1,7 +1,8 @@
 package OnLIneScool.entyty;
+import java.io.Serializable;
 import java.util.Random;
 
-    public class Students  {
+    public class Students implements Serializable {
 
 
 
@@ -34,10 +35,7 @@ import java.util.Random;
         public Students(int height) {
         }
 
-        @Override
-        public void seyHuman() {
-            System.out.println("Hello I am Students");
-        }
+
 
 
 
