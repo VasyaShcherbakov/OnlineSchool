@@ -1,7 +1,8 @@
 package OnLIneScool.entyty;
 
 import OnLIneScool.utility.LecturesUtil;
-
+import java.util.ArrayList;
+import java.util.List;
 public class Lectures {
 
     HomeWork [] homeWork = new HomeWork[3];
@@ -17,6 +18,7 @@ public class Lectures {
     private int personId;
     private Integer id;
 
+    int date;
     public String idKurse;
     private byte curs;
     static int countLectures;
@@ -26,9 +28,8 @@ public class Lectures {
 
     private String description ;
 
-
-
-
+    public Lectures(int i, int i1) {
+    }
 
 
     @Override
@@ -111,4 +112,16 @@ public class Lectures {
     public Lectures() {
 
         }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
+
+    public int getDate() {
+        return date;
+    }
+
+    public void setDate(int date) {
+        this.date = date;
+    }
+}

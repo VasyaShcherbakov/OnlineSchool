@@ -3,56 +3,24 @@ package OnLIneScool.entyty;
 import java.util.ArrayList;
 import java.util.Random;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 class MainEntyty {
     public static void main(String[] args) {
-        Teacher teacher0 = new Teacher(190, "man", 1, 1, "Dmitriy", "Yukhimovich", 90);
+        List<Lectures> lecturesList = new ArrayList<>();
+        lecturesList.add(new Lectures(1, 20210101));
+        lecturesList.add(new Lectures(2, 20210101));
+        lecturesList.add(new Lectures(3, 20210102));
 
-        Teacher teacher1 = new Teacher(190, "man", 2, 2, "Shastyslav", "Vitanovich", 90);
+        int desiredDate = 20210101;
+        lecturesList.forEach(lecture -> {
+                    if (lecture.date == desiredDate) {
+                        System.out.println("Lectures ID: " + lecture.date);
 
-        Teacher teacher2 = new Teacher(180, "man", 3, 3, "Charl'z", "Maksimovich", 90);
-
-        ArrayList<Teacher> teachers = new ArrayList<>();
-        teachers.add(teacher0);
-        teachers.add(teacher1);
-        teachers.add(teacher2);
-
-        Lectures lectures = new Lectures(7, (byte) 1, "Nikodim", "Pilipovith", 60);
-
-
-        Lectures lectures1 = new Lectures(8, (byte) 2, "Tverdigorst", "Yaromirovith", 85);
-
-
-        Lectures lectures2 = new Lectures(9, (byte) 3, "Juliy", "Arsenovith", 85);
-
-        ArrayList<Lectures> lecturesArrayList = new ArrayList<>();
-        lecturesArrayList.add(lectures);
-        lecturesArrayList.add(lectures1);
-        lecturesArrayList.add(lectures2);
-
-
-        Students students0 = new Students(180, "female", 4, 1, "Vlada", "Vadimivna", 80);
-
-        Students students1 = new Students(170, "female", 5, 2, "Zvonimira", "Semenivna", 80);
-
-        Students students2 = new Students(195, "female", 6, 3, "Odarka", "Timurivna", 95);
-
-        ArrayList<Students> studentsArrayList = new ArrayList<>();
-        studentsArrayList.add(students0);
-        studentsArrayList.add(students1);
-        studentsArrayList.add(students2);
-        // Зберігаєм ArraList в файл
-        try {
-            // создаем объект ObjectOutputStream и открываем поток для записи в файл
-            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("teachers.txt"));
-
-            // записываем список ArrayList в файл
-            out.writeObject(teachers);
-            out.close();
-        } catch (IOException ex) {
-            System.err.println("Ошибка при записи в файл: " + ex.getMessage());
-        }
-
+                    }
+                }
+    }
 
 
 
@@ -87,8 +55,10 @@ class MainEntyty {
             throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);*/
-        }
-    }
+
+
+
+
 
 
 
