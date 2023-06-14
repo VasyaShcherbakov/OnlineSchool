@@ -5,10 +5,19 @@ import java.util.Random;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
 class MainEntyty {
     public static void main(String[] args) {
-        List<Lectures> lecturesList = new ArrayList<>();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MMMdd,EEEE HH:mm:ss");
+        String formattedDate = dateFormat.format(lectureDate);
+        System.out.println(formattedDate);
+
+    }
+}
+
+
+ /*List<Lectures> lecturesList = new ArrayList<>();
         lecturesList.add(new Lectures(1, 20210101));
         lecturesList.add(new Lectures(2, 20210101));
         lecturesList.add(new Lectures(3, 20210102));
@@ -19,10 +28,7 @@ class MainEntyty {
                         System.out.println("Lectures ID: " + lecture.date);
 
                     }
-                }
-    }
-
-
+                }*/
 
 
 

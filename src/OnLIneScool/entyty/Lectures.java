@@ -3,8 +3,10 @@ package OnLIneScool.entyty;
 import OnLIneScool.utility.LecturesUtil;
 import java.util.ArrayList;
 import java.util.List;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 public class Lectures {
-
+    private Date lectureDate;
     HomeWork [] homeWork = new HomeWork[3];
 
     public Lectures(HomeWork[] homeWork) {
@@ -16,6 +18,11 @@ public class Lectures {
 
 
     private int personId;
+
+    private int creationDate;
+
+    private int lectureDate;
+
     private Integer id;
 
     int date;
@@ -123,5 +130,10 @@ public class Lectures {
 
     public void setDate(int date) {
         this.date = date;
+    }
+
+    public Lectures(Date lectureDate, int creationDate) {
+        this.lectureDate = lectureDate;
+        this.creationDate = creationDate;
     }
 }
