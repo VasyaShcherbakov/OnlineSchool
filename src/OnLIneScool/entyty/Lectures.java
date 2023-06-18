@@ -21,7 +21,7 @@ public class Lectures {
 
     private int creationDate;
 
-    private int lectureDate;
+
 
     private Integer id;
 

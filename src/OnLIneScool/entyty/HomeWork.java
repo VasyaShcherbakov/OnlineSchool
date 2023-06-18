@@ -7,9 +7,7 @@ public class HomeWork {
     private Integer id;
 
     private Date deadline;
-    public Homework() {
-        deadline = new Date();
-        deadline.setTime(1643644800000L); // 1 лютого 2022 року в мілісекундах
+
     private Integer lectureId;
     private String task;
 

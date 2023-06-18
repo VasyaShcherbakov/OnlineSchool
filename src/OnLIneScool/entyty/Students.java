@@ -1,6 +1,6 @@
 package OnLIneScool.entyty;
 import java.io.Serializable;
-import java.util.Random;
+import java.util.Optional;
 
     public class Students implements Serializable {
 
@@ -8,6 +8,8 @@ import java.util.Random;
 
 
     private Integer id;
+
+    private int databaseResponse;
     private int homewrok;
     static   int countStudents;
     private  int curs;
@@ -15,14 +17,22 @@ import java.util.Random;
     private String surname;
     private  int academicPerformance;
 
-        public Students(Integer id, int homewrok) {
+        public Optional<Integer> getID() {return Optional.ofNullable(id);
+        }
+
+        public Optional<Integer> getDatabaseResponse() {
+            return Optional.ofNullable(databaseResponse);
+        }
+        public Students(Integer id, int databaseResponse, int homewrok) {
             this.id = id;
+            this.databaseResponse = databaseResponse;
             this.homewrok = homewrok;
         }
 
-        public Students (int height, String gender, int id, int curs, String name, String surname, int academicPerformance) {
+        public Students (int height, String gender) {
 
             this.id = id;
+            this.databaseResponse = databaseResponse;
             this.curs = curs;
             this.name = name;
             this.surname = surname;
@@ -32,7 +42,8 @@ import java.util.Random;
 
         }
 
-        public Students(int height) {
+        public Students(int height, int databaseResponse) {
+            this.databaseResponse = databaseResponse;
         }
 
 
