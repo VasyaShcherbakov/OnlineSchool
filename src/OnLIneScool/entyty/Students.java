@@ -1,112 +1,52 @@
 package OnLIneScool.entyty;
+
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Optional;
 
-    public class Students implements Serializable {
-
-
-
-
+public class Students implements Serializable {
     private Integer id;
+    private String emal;
 
-    private int databaseResponse;
-    private int homewrok;
-    static   int countStudents;
-    private  int curs;
-    private String name;
-    private String surname;
-    private  int academicPerformance;
-
-        public Optional<Integer> getID() {return Optional.ofNullable(id);
-        }
-
-        public Optional<Integer> getDatabaseResponse() {
-            return Optional.ofNullable(databaseResponse);
-        }
-        public Students(Integer id, int databaseResponse, int homewrok) {
-            this.id = id;
-            this.databaseResponse = databaseResponse;
-            this.homewrok = homewrok;
-        }
-
-        public Students (int height, String gender) {
-
-            this.id = id;
-            this.databaseResponse = databaseResponse;
-            this.curs = curs;
-            this.name = name;
-            this.surname = surname;
-            this.academicPerformance = academicPerformance;
-            this.countStudents ++;
-
-
-        }
-
-        public Students(int height, int databaseResponse) {
-            this.databaseResponse = databaseResponse;
-        }
-
-
-
-
-
-        public int getId() {
-            return id;
-        }
-
-        public void setId(int id) {
-            this.id = id;
-        }
-
-        public int getCurs() {
-            return curs;
-        }
-
-        public void setCurs(int curs) {
-            this.curs = curs;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public String getSurname() {
-            return surname;
-        }
-
-        public void setSurname(String surname) {
-            this.surname = surname;
-        }
-
-        public int getAcademicPerformance() {
-            return academicPerformance;
-        }
-
-        public void setAcademicPerformance(int academicPerformance) {
-            this.academicPerformance = academicPerformance;
-        }
-
-        public static int getCountStudents() {
-            return countStudents;
-        }
-
-        public static void setCountStudents(int countStudents) {
-            Students.countStudents = countStudents;
-        }
-
-        @Override
-        public String toString() {
-            return "Students{" +
-                    "id=" + id +
-                    ", curs=" + curs +
-                    ", name='" + name + '\'' +
-                    ", surname='" + surname + '\'' +
-                    ", academicPerformance=" + academicPerformance +
-                    '}';
-        }
-
+    public Students(Integer id, String emal) {
+        this.id = id;
+        this.emal = emal;
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getEmal() {
+        return emal;
+    }
+
+    public void setEmal(String emal) {
+        this.emal = emal;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Students students = (Students) o;
+        return Objects.equals(id, students.id) && Objects.equals(emal, students.emal);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, emal);
+    }
+
+    @Override
+    public String toString() {
+        return "Students{" +
+                "id=" + id +
+                ", emal='" + emal + '\'' +
+                '}';
+    }
+}

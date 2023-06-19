@@ -10,33 +10,31 @@ import java.util.Date;
 import java.util.Optional;
 class MainEntyty {
     public static void main(String[] args) {
-        Students student1 = new Students(123, 95);
-        Students students2 = new Students(2,94);
+        Repo repo = new Repo();
 
+        List<Person> personList = repo.getListOfPersons();
+        personList.add(1, "email1@mail.com"));
+        personList.add(2, "email2@mail.com"));
+        personList.add(3, "email3@mail.com"));
+        personList.add(4, "email4@mail.com"));
+        personList.add(5, "email5@mail.com"));
+        personList.add(6, "email6@mail.com"));
+        personList.add(7, "email7@mail.com"));
+        personList.add(8, "email8@mail.com"));
+        personList.add(9, "email9@mail.com"));
+        personList.add(10, "email1@mail.com")); // email1@mail.com - дубликат
 
-        Optional<Integer> studentID = student1.getID(); // Optional[123]
-        Optional<Integer> studentResponse = student1.getDatabaseResponse();
-       /* Students student2 = new Students(456,null, 7);*/
-        Optional<Integer> studentID2 = student2.getID(); // Optional[456]
-        Optional<Integer> studentResponse2 = student2.getDatabaseResponse();
-        List<Teacher> teachers = new ArrayList<Teacher>();
-        teachers.add(1,"Yarovoy Erik Vasilievich");
-        teachers.add(2,"Ignatiev Sherlock Leonidovich");
-        teachers.add(3,"Tsushko Makar Grigorievich");
-        teachers.add(4,"Petrov Leon Vitalievich");
-        teachers.add(5,"Maslovsky Eduard Lvovich");
-        teachers.add(6,"Ovcharenko Dominik Andreevich");
-        teachers.add(7,"Kotsiubinsky Joseph Vladimirovich");
-        teachers.add(8,"Yakovenko Nestor Ivanovich");
-        teachers.add(9,"Orlov Trofim Vladimirovich");
-        teachers.add(10,"Solovyov Orest Maksimovich");
-
-
-
-
-        List<String> namesStartingWithN = teachers.stream()
-                .filter(teacher -> teacher.getName().startsWith("N"))
-                .map(Teacher::getName)
+        List<Person> filteredList = personList.stream()
+                .map(person -> {
+                    if (personList.stream().filter(p -> p.getEmail().equals(person.getEmail())).count() > 1) {
+                        person.setEmail("DUPLICATE"); // установка метки для дубликата
+                    }
+                    return person;
+                })
                 .collect(Collectors.toList());
+       /* List<Students> StudentsList = new ArrayList<>();
+        StudentsList.stream().filter(students -> students.getEmal);*/
+        
+
     }
-    }
+}
