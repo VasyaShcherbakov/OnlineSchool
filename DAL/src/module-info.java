@@ -1,0 +1,3 @@
+module DAL {
+    exports DAL;
+}
