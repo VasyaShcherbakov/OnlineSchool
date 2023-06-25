@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/API/API.iml" filepath="$PROJECT_DIR$/API/API.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DAL/DAL.iml" filepath="$PROJECT_DIR$/DAL/DAL.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Level_of_services/Level_of_services.iml" filepath="$PROJECT_DIR$/Level_of_services/Level_of_services.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/OnlineSchool.iml" filepath="$PROJECT_DIR$/.idea/OnlineSchool.iml" />
     </modules>
   </component>
