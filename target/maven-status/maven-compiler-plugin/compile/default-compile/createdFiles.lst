@@ -1,5 +1,6 @@
 OnLIneScool\entyty\Students.class
 OnLIneScool\entyty\Course.class
+OnLIneScool\entyty\UserService.class
 OnLIneScool\entyty\AdditiveMaterials.class
 OnLIneScool\entyty\Log.class
 OnLIneScool\entyty\LogUtils.class
@@ -14,3 +15,4 @@ OnLIneScool\entyty\StudentsRepository.class
 OnLIneScool\entyty\TeacherRepository.class
 OnLIneScool\entyty\AdditiveMaterials$ResourceTye.class
 OnLIneScool\entyty\Person.class
+OnLIneScool\entyty\User.class
