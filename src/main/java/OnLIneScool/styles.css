@@ -1,0 +1,30 @@
+css
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+.nav-block {
+  width: 618px;
+}
+
+.nav-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-block li {
+  display: inline-block;
+}
+
+.nav-block a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Monstsetat sans-serif;
+}
+
+.nav-block a:hover {
+  background-color: #f2f2f2;
+}
