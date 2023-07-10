@@ -2,7 +2,7 @@ package OnLIneScool.entyty;
 
 import java.util.Objects;
 
-public class Teacher implements Comparable<Teacher> {
+public class Teacher  {
     private Integer id;
     static int countTeacher;
     private int curs;
@@ -71,38 +71,4 @@ public class Teacher implements Comparable<Teacher> {
             this.academicPerformance = academicPerformance;
         }
 
-
-      /*  @Override
-        public void seyHuman() {
-            System.out.println("Hello I am Teaher");
-        }*/
-
-        @Override
-        public String toString() {
-            return "Teacher{" +
-                    "id=" + id +
-                    ", curs=" + curs +
-                    ", name='" + name + '\'' +
-                    ", surname='" + surname + '\'' +
-                    ", academicPerformance=" + academicPerformance +
-                    '}';
-        }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Teacher teacher = (Teacher) o;
-        return curs == teacher.curs && academicPerformance == teacher.academicPerformance && id.equals(teacher.id) && name.equals(teacher.name) && surname.equals(teacher.surname);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, curs, name, surname, academicPerformance);
-    }
-
-    @Override
-    public int compareTo(Teacher o) {
-        return 0;
-    }
 }

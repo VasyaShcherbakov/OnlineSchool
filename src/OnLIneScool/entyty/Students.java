@@ -1,6 +1,6 @@
 package OnLIneScool.entyty;
 
-    public class Students implements Person {
+    public class Students {
 
 
 
@@ -28,10 +28,6 @@ package OnLIneScool.entyty;
         public Students(int height) {
         }
 
-        @Override
-        public void seyHuman() {
-            System.out.println("Hello I am Students");
-        }
 
 
 
