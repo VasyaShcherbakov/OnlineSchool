@@ -1,6 +1,6 @@
-package OnLIneScool.utility;
+package main.java.OnLIneScool.utility;
 
-import OnLIneScool.entyty.Students;
+import main.java.OnLIneScool.entyty.Students;
 public class StudentsUtil {
     Students students;
 

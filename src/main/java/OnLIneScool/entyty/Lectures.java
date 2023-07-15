@@ -1,10 +1,14 @@
-package OnLIneScool.entyty;
+package main.java.OnLIneScool.entyty;
 
-import OnLIneScool.utility.LecturesUtil;
+import main.java.OnLIneScool.entyty.HomeWork;
 
+@Component
 public class Lectures {
 
-    HomeWork [] homeWork = new HomeWork[3];
+
+    @Scope("Lectures")
+
+    HomeWork[] homeWork = new HomeWork[3];
 
     public Lectures(HomeWork[] homeWork) {
         this.homeWork = homeWork;

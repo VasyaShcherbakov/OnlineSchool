@@ -1,6 +1,9 @@
-package OnLIneScool.entyty;
-
+package main.java.OnLIneScool.entyty;
+@Component
 public class HomeWork {
+    @Scope("HomeWork")
+
+
     private Integer id;
     private int lectureId;
     private String task;

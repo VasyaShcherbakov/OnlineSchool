@@ -1,7 +1,6 @@
-package OnLIneScool.entyty;
+package main.java.OnLIneScool.entyty;
 
-import java.util.Objects;
-
+@Component
 public class Teacher  {
     private Integer id;
     static int countTeacher;

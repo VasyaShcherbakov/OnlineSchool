@@ -1,6 +1,15 @@
-package OnLIneScool.entyty;
-
+package main.java.OnLIneScool.entyty;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+@Component
 public class AdditiveMaterials {
+    @Autowired
+    @Scope("AdditiveMaterials")
+    @Bean
+    public UserRepository userRepository(){
+        return new UserRepository();
+    }
+
     private int id;
     private String name;
     private int lectureId;

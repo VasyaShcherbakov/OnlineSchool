@@ -1,8 +1,6 @@
-package OnLIneScool.entyty;
-
+package main.java.OnLIneScool.entyty;
+@Component
     public class Students {
-
-
 
 
     private Integer id;
