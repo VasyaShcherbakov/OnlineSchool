@@ -1,6 +1,6 @@
 package main.java.OnLIneScool.entyty;
 
-@Component
+@Entity
 public class Teacher  {
     private Integer id;
     static int countTeacher;

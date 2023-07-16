@@ -2,7 +2,7 @@ package main.java.OnLIneScool.entyty;
 
 import main.java.OnLIneScool.entyty.HomeWork;
 
-@Component
+@Entity
 public class Lectures {
 
 

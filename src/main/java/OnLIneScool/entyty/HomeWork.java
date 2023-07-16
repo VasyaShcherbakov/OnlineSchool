@@ -1,7 +1,7 @@
 package main.java.OnLIneScool.entyty;
-@Component
+@Entity
 public class HomeWork {
-    @Scope("HomeWork")
+
 
 
     private Integer id;

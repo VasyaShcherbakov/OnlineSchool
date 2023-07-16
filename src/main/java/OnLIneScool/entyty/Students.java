@@ -1,5 +1,5 @@
 package main.java.OnLIneScool.entyty;
-@Component
+@Entity
     public class Students {
 
 

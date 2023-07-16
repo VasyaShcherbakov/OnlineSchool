@@ -1,5 +1,4 @@
 package main.java.OnLIneScool.entyty;
-@Configuration
-@ComponentScan
+@Entity
 public class SpringConfig {
 }
