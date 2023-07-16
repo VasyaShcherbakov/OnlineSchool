@@ -1,7 +1,19 @@
 package main.java.OnLIneScool.entyty;
 
-class MainEntyty {
-    public static void main(String[] args) {
+import main.java.OnLIneScool.entyty.HomeWork;
+import main.java.OnLIneScool.entyty.Lectures;
+import main.java.OnLIneScool.entyty.Students;
+import main.java.OnLIneScool.entyty.Teacher;
+import org.hibernate.IdentifierLoadAccess;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import javax.persistence.Query;
+import java.util.List;
+
+
+public class RepositoryGet {
+    public static void getDevice(Integer integer) {
         Session session = SessionCreator.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         Query usersQuery = session.createQuery("from Device where id = :idDevice", Device.class);
@@ -9,15 +21,6 @@ class MainEntyty {
         System.out.println(usersQuery.getSingleResult());
         transaction.commit();
         session.close();
+    }
 
-        }
 }
-
-
-
-
-
-
-
-
-

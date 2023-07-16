@@ -88,4 +88,6 @@ package main.java.OnLIneScool.entyty;
                     '}';
         }
 
+    public Students() {
     }
+}

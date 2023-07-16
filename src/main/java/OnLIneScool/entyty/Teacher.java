@@ -70,4 +70,6 @@ public class Teacher  {
             this.academicPerformance = academicPerformance;
         }
 
+    public Teacher() {
+    }
 }
