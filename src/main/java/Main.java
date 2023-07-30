@@ -1,5 +1,4 @@
 import OnLIneScool.config.JpaConfig;
-import OnLIneScool.service.FlowerService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;
 

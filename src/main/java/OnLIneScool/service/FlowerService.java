@@ -1,36 +1,35 @@
 package OnLIneScool.service;
-import org.springframework.stereotype.Service;
+
+import OnLIneScool.entyty.Flower;
+import OnLIneScool.repo.FlowerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+
+
 @Service
 public class FlowerService {
-
-    private FlowerRepo flowerRepo;
     @Autowired
+    private FlowerRepo flowerRepo;
 
-    public FlowerService(FlowerRepo flowerRepo) {
-        this.flowerRepo = flowerRepo;
+    public void addUser() {
+        final Flower flower = new Flower();
+        flower.setName("Jon");
+        flower.setType("Bio");
+        flower.setEmail("Bio@gmail.com");
+
+        flowerRepo.saveAndFlush(flower);
+    }
+
+    public void save(Flower flower) {
+        flowerRepo.saveAndFlush(flower);
     }
 
 
-
-
-
-    public void addFliwer() {
-        final FlowerService flowerService = new FlowerService()
-        student.setName("Jon");
-        student.setType("Bio");
-        student.setEmail("Bio@gmail.com");
-
-        studentRepo.saveAndFlush(student);
-    }
-
-    public void save(Student student) {
-        studentRepo.saveAndFlush(student);
-    }
-
-
-    public List<Student> findAll() {
-        return studentRepo.findAll();
+    public List<Flower> findAll() {
+        return flowerRepo.findAll();
     }
 
 }

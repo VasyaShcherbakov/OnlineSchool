@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = {"com.example.badex"})
+@EnableJpaRepositories(basePackages = {"com.com.OnLIneScool"})
 @ComponentScan("com.OnlineScool.config")
 
 public class JpaConfig {
