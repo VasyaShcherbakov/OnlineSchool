@@ -9,5 +9,8 @@
         <module name="OnlineSchool" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java4springboot" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

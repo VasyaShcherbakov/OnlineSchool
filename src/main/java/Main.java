@@ -1,4 +1,3 @@
-import OnLIneScool.config.JpaConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;
 

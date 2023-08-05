@@ -1,6 +1,5 @@
 package OnLIneScool.service;
 
-import OnLIneScool.entyty.Flower;
 import OnLIneScool.repo.FlowerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
