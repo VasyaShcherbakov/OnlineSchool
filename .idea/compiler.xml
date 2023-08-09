@@ -6,11 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="OnlineSchool" />
+        <module name="java4springboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="java4springboot" target="17" />
+      <module name="OnlineSchool" target="18" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="java4springboot" options="-parameters" />
+    </option>
   </component>
 </project>

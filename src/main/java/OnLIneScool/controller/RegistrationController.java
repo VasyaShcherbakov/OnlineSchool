@@ -1,7 +1,8 @@
 package OnLIneScool.controller;
-import com.example.java4springboot.entity.Role;
-import com.example.java4springboot.entity.User;
-import com.example.java4springboot.service.UserService;
+
+import OnLIneScool.entyty.Role;
+import OnLIneScool.entyty.User;
+import OnLIneScool.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
