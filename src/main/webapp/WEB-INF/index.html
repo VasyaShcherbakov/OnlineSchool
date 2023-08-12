@@ -1,0 +1,28 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вопросы</title>
+</head>
+<body>
+
+<button type="submit" id="submit">answer 5 questions</button>
+
+<script>
+document.querySelector("#submit").onclick = function(){
+alert("");
+}
+
+      var questions = [
+        "Який ваш улюблений колір"        "Ваше хоббі"        "Ваш улюблений фильм?"
+      ];
+
+
+      for (var i = 0; i < questions.length; i++) {
+        var answer = prompt(questions[i]);
+        console.log("Відповідь на питання \"" + questions[i] + "\": " + answer);
+      }
+    }
+  </script>
+</body>
+</html>
