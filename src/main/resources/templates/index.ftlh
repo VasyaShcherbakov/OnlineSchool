@@ -1,41 +1,25 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Приклад форми на JavaScript</title>
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Please input this");
+                return false;
+            }
+        }
+    </script>
 </head>
 <body>
-
-<table border="2px">
-    <thead>
-    <tr>
-        <th>tree id</th>
-        <th>name</th>
-        <th>age</th>
-        <th>is green</th>
-        <th>delete</th>
-    </tr>
-    </thead>
-    <tbody>
-    <#list trees as tree>
-        <tr>
-            <td><a href="/trees/${tree.getId()}"><p>${tree.getId()}</a></td>
-            <td>${tree.getName()}</td>
-            <td>${tree.getAge()}</td>
-
-            <#if tree.getIsGreen()>
-                <td>GREEN</td>
-            <#else>
-                <td>NOT GREEN</td>
-            </#if>
-            <td><a href="/trees/delete/${tree.getId()}"><p>DELETE</a></td>
-        </tr>
-    </#list>
-    </tbody>
-</table>
-
+<h2>Reg</h2>
+<form name="myForm" onsubmit="return validateForm()" method="post">
+    <label for="fname">NAme:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Second name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Send">
+</form>
 </body>
 </html>

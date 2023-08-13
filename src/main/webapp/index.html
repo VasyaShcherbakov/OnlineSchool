@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Регистрация</title>
+    <script>
+    function validateForm() {
+      var name = document.forms["registrationForm"]["name"].value;
+      var email = document.forms["registrationForm"]["email"].value;
+      var password = document.forms["registrationForm"]["password"].value;
+      var confirmPassword = document.forms["registrationForm"]["confirmPassword"].value;
+
+      // Проверка заполненности полей
+      if (name === "" || email === "" || password === "" || confirmPassword === "") {
+        alert("Пожалуйста заполните все поля!");
+        return false;
+      }
+
+      // Проверка совпадения паролей
+      if (password !== confirmPassword) {
+        alert("Пароли не совпадают!");
+        return false;
+      }
+
+      // Дополнительные проверки например формата email
+
+      // Если все проверки пройдены можно отправить форму
+      return true;
+    }
+  </script>
+</head>
+<body>
+<h2>Регистрация</h2>
+<form name="registrationForm" onsubmit="return validateForm()" method="post">
+    <label for="name">Имя:</label>
+    <input type="text" name="name" id="name">
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    <br><br>
+    <label for="password">Пароль:</label>
+    <input type="password" name="password" id="password">
+    <br><br>
+    <label for="confirmPassword">Подтвердите пароль:</label>
+    <input type="password" name="confirmPassword" id="confirmPassword">
+    <br><br>
+    <input type="submit" value="Зарегистрироваться">
+</form>
+</body>
+</html>
